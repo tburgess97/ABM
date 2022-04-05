@@ -270,7 +270,3 @@ model_menu.add_command(label="Run model", command=run)
 model_menu.add_command(label="Close model", command=close)
 
 tkinter.mainloop()
-     
-
-#List of dependancies (i.e. what packages and versions required to install to
-# run) (pip install package)
