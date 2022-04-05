@@ -37,12 +37,19 @@ It was produced for GEOG5990: Assignment 1 as part of MSc River Basin Dynamics a
 
 The model requires the following packages to be installed locally:
 
+- [requests: v2.27.1](https://docs.python-requests.org/en/latest/)
+- [bs4: v4.9.0](https://www.crummy.com/software/BeautifulSoup/bs4/doc/)
+- [matplotlib: v3.5.1](https://matplotlib.org/)
+
 
 ### Running the Model
 
 - Download [the model repository](https://github.com/tburgess97/ABM) (under code -> Download ZIP) and extract to a local directory
 - Navigate to the directory the model is stored locally within the command prompt 
-- Install the packages required (as listed in the dependences above) locally using pip install 
+- Install the packages required (as listed in the dependences above) locally using pip install:
+  - At the command prompt: > python -m pip 
+  - To install packages at the command prompt: > python -m pip install <package>
+    - Where packages required for the model: 'requests', 'bs4' and 'matplotlib'
 - Run the model from the command prompt using the command: python model.py 
   - Running the model as command 'python model.py' uses the default parameters: Number of agents = 20, number of iterations = 200, neighbourhood = 50
   - Running the model as command 'python model.py x y z' will set the paramaters as input integer values
