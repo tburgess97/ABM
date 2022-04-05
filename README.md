@@ -40,7 +40,7 @@ The model requires the following packages to be installed locally:
 
 ### Running the Model
 
-- Download [the model repository](https://github.com/tburgess97/ABM) and extract to a local directory
+- Download [the model repository](https://github.com/tburgess97/ABM) (under code -> Download ZIP) and extract to a local directory
 - Navigate to the directory the model is stored locally within the command prompt 
 - Install the packages required (as listed in the dependences above) locally using pip install 
 - Run the model from the command prompt using the command: python model.py 
