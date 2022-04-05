@@ -5,6 +5,10 @@ Contains agents attributes and their behaviours
 As ran through model.py
 
 Version 1
+
+Author: 201466497, University of Leeds
+
+As produced for GEOG5990: Assignment 1
 '''
 
 # Packages
@@ -76,7 +80,6 @@ class Agent:
         return " x " + str(self._x) + " y " + str(self._y)
         
     
-# get and set functions for coords
     def getx(self):
         return self._x
         '''
@@ -124,7 +127,6 @@ class Agent:
     y = property(gety, sety, "I'm the 'y' property")
     
     
-# move instance by 1 step (one x step, one y step)
     def move(self):
         '''
         A function to move the agent by one step in a random direction and 

@@ -3,7 +3,7 @@ Agent-based Model
 
 Version 1
 
-Author: gy21t2b, 201466497, University of Leeds
+Author: 201466497, University of Leeds
 
 As produced for GEOG5990: Assignment 1
 
