@@ -45,14 +45,14 @@ print("Libraries and modules imported")
 # Command line argument source code adapted from:
     # https://docs.python.org/3/library/argparse.html
 parser = argparse.ArgumentParser(description = 'Agent-based model')
-parser.add_argument("num_of_agents", type = int, nargs ='?', const = 10, 
-                    default = 10, help = "This sets the number of agents as \
+parser.add_argument("num_of_agents", type = int, nargs ='?', const = 20, 
+                    default = 20, help = "This sets the number of agents as \
                         an integer")
-parser.add_argument("num_of_iterations", nargs = '?', type = int, const = 100,
-                    default = 100, help = "This sets the number of iterations \
+parser.add_argument("num_of_iterations", nargs = '?', type = int, const = 200,
+                    default = 200, help = "This sets the number of iterations \
                         as an integer")
-parser.add_argument("neighbourhood", nargs = '?', type = int, const = 20,
-                    default = 20, help = "This sets the neighbourhood as an \
+parser.add_argument("neighbourhood", nargs = '?', type = int, const = 50,
+                    default = 50, help = "This sets the neighbourhood as an \
                         integer")
 
 args = parser.parse_args()
@@ -106,10 +106,11 @@ print(td_ys)
 print(td_xs)
 '''
 
-# Create agents and assign starting coordinates as scraped above
+# Create agents and assign starting coordinates as scraped above (coordinates
+# * 3 in order to use the full environment)
 for i in range(num_of_agents):
-    y = int(td_ys[i].text)
-    x = int(td_xs[i].text)
+    y = int(td_ys[i].text)*3
+    x = int(td_xs[i].text)*3
     agents.append(agentframework.Agent(environment, agents, y, x))
 
 #  Starting coordinates assigned to agents
@@ -173,7 +174,7 @@ def update(frame_number):
         agents[i].share_with_neighbours(neighbourhood)
    
     full_count = 0
-    store_limit = 500
+    store_limit = 1000
     for i in range(num_of_agents):
         if agents[i].store > store_limit:
             full_count = full_count + 1

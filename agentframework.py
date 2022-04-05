@@ -51,19 +51,19 @@ class Agent:
         None.
 
         '''
-        self._y = random.randint(0,299)
-        self._x = random.randint(0,299)
+        self._y = random.randint(0,300)
+        self._x = random.randint(0,300)
         self.environment = environment
         self.store = 0
         self.agents = agents
         
         if (x == None):
-            self._x = random.randint(0,299)
+            self._x = random.randint(0,300)
         else:
             self._x = x
             
         if (y == None):
-            self._y = random.randint(0,299)
+            self._y = random.randint(0,300)
         else:
             self._y = y
         
@@ -151,13 +151,13 @@ class Agent:
         # Fence boundary affect to keep the agent within the environment limits
         if self._y < 0:
             self._y = 0
-        if self._y > 299:
-            self._y = 299
+        if self._y > 300:
+            self._y = 300
         
         if self._x <0:
             self._x = 0
-        if self._x > 299:
-            self._x = 299
+        if self._x > 300:
+            self._x = 300
 
 
     def eat(self):
