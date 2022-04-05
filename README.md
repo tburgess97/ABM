@@ -68,3 +68,4 @@ A series of checks have been left in the model code as commented out statements.
 **Student ID:** gy21t2b, The University of Leeds
 
 ## License 
+This repository is licensed under the [MIT License](https://github.com/tburgess97/ABM/blob/main/LICENSE)
