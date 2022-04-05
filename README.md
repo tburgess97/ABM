@@ -17,7 +17,7 @@ It was produced for GEOG5990: Assignment 1 as part of MSc River Basin Dynamics a
   2. Eat the environment and fill their stores
   3. Share their stores with nearby agents to a customisable distance
   4. Randomises the order of agents actions
-  5. Automatically stops the model when all the agents stores are full or the set number of steps is met
+  5. Automatically stops the model when all the agents stores are full (1000) or the set number of steps is met
 
 ## User Guide
 
@@ -44,7 +44,7 @@ The model requires the following packages to be installed locally:
 - Navigate to the directory the model is stored locally within the command prompt 
 - Install the packages required (as listed in the dependences above) locally using pip install 
 - Run the model from the command prompt using the command: python model.py 
-  - Running the model as command 'python model.py' uses the default parameters: Number of agents = 10, number of iterations = 100, neighbourhood = 20
+  - Running the model as command 'python model.py' uses the default parameters: Number of agents = 20, number of iterations = 200, neighbourhood = 50
   - Running the model as command 'python model.py x y z' will set the paramaters as input integer values
     - x = number of agents (as an integer)
     - y = number of iterations (as an integer)
