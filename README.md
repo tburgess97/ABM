@@ -64,8 +64,10 @@ A series of checks have been left in the model code as commented out statements.
 - Line 182: Each agents stored is filled
 
 ## Author
-
 **Student ID:** gy21t2b, The University of Leeds
 
 ## License 
-This repository is licensed under the [MIT License](https://github.com/tburgess97/ABM/blob/main/LICENSE)
+The repository is licensed under the [MIT License](https://github.com/tburgess97/ABM/blob/main/LICENSE)
+
+## Acknowledgements
+The model was developed following the guidance of https://www.geog.leeds.ac.uk/courses/computing/study/core-python/
