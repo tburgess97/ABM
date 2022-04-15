@@ -31,7 +31,7 @@ It was produced for GEOG5990: Assignment 1 as part of MSc River Basin Dynamics a
 
 **4. in.txt:** txt file containing the environment data
 
-**5. LICENSE:**
+**5. LICENSE:** MIT License
 
 ### List of Dependencies
 
